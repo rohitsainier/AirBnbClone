@@ -5,13 +5,15 @@ import {
 } from 'react-native';
 
 import HomeScreen from './scr/screens/Home';
+import Post from './scr/components/Post';
+ 
 
 const App = () => {
   return(
     <>
     <StatusBar barStyle="dark-content"/>
     <SafeAreaView>
-      <HomeScreen />
+      <Post/>
     </SafeAreaView>
     </>
   );
