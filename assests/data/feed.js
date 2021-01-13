@@ -9,8 +9,11 @@ export default [
       bedroom: 3,
       oldPrice: 25,
       newPrice: 20,
-      totalPrice: 120
-      
+      totalPrice: 120,
+      coordinate: {
+        latitude: 28.3915637,
+        longitude: -16.6291304,
+      },
     },
     {
       id: '1',

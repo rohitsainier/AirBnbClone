@@ -7,6 +7,7 @@ import {
 import HomeScreen from './scr/screens/Home';
 import Post from './scr/components/Post';
 import feed from './assests/data/feed';
+import SearchScreen from './scr/screens/SearchResults';
 
 const post1 = feed[0];
  
@@ -16,7 +17,7 @@ const App = () => {
     <>
     <StatusBar barStyle="dark-content"/>
     <SafeAreaView>
-      <Post post={post1}/>
+      <SearchScreen/>
     </SafeAreaView>
     </>
   );
