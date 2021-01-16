@@ -7,8 +7,11 @@ import {
 import HomeScreen from './scr/screens/Home';
 import Post from './scr/components/Post';
 import feed from './assests/data/feed';
+import SearchScreen from './scr/screens/SearchResults';
 import DestinationSearchScreen from './scr/screens/DestinationSearch';
+import GuestsScreen from './scr/screens/Guests';
 
+const post1 = feed[0];
  
 
 const App = () => {
@@ -16,7 +19,7 @@ const App = () => {
     <>
     <StatusBar barStyle="dark-content"/>
     <SafeAreaView>
-      <DestinationSearchScreen/>
+      <GuestsScreen/>
     </SafeAreaView>
     </>
   );
