@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {View,Text,Pressable} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 import styles from './styles';
 
@@ -7,10 +8,12 @@ const GuestsScreen = () =>{
     const [adults, setAdults] = useState(0);
     const [children, setChildren] = useState(0);
     const [infants, setInfants] = useState(0);
+    const navigation = useNavigation();
 
     return (
-        <View>
-            <View style={styles.row}>
+        <View style={{justifyContent:'space-between',height:'100%'}}>
+            <View>
+                <View style={styles.row}>
             <View style={styles.leftView}>
                 <Text style={styles.title}>Adults</Text>
                 <Text style={styles.subtitle}>Ages 13 or above</Text>
@@ -33,7 +36,7 @@ const GuestsScreen = () =>{
             </View>
             </View>
 
-            <View style={styles.row}>
+                <View style={styles.row}>
             <View style={styles.leftView}>
                 <Text style={styles.title}>Children</Text>
                 <Text style={styles.subtitle}>Ages 13 or below</Text>
@@ -56,9 +59,7 @@ const GuestsScreen = () =>{
             </View>
             </View>
 
-
-
-            <View style={styles.row}>
+                <View style={styles.row}>
             <View style={styles.leftView}>
                 <Text style={styles.title}>Infants</Text>
                 <Text style={styles.subtitle}>Ages 5 or below</Text>
@@ -80,6 +81,36 @@ const GuestsScreen = () =>{
                 </Pressable>
             </View>
             </View>
+            </View>
+            <View>
+                <Pressable 
+                onPress={() => navigation.navigate('Home',{
+                    screen:'Explore',
+                    params:{
+                        screen:'SearchResults',
+                    },
+                })
+                }
+                style={{
+                    marginBottom:20,
+                    backgroundColor:'#f15454',
+                    alignItems:'center',
+                    justifyContent:'center',
+                    height:50,
+                    marginHorizontal:20,
+                    borderRadius:10,
+                }
+                }>
+                    <Text style={{
+                        fontSize:20,
+                        color:'white',
+                        fontWeight:'bold',
+                    }}>
+                        Search
+                    </Text>
+                </Pressable>
+            </View>
+
         </View>
     );
 }
